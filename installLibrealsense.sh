@@ -2,7 +2,7 @@
 # Builds the Intel Realsense library librealsense2 on a Jetson TX2 Developer Kit
 
 LIBREALSENSE_DIRECTORY=${HOME}/librealsense
-LIBREALSENSE_VERSION=v2.22.0
+LIBREALSENSE_VERSION=v2.24.0
 INSTALL_DIR=$PWD
 
 
