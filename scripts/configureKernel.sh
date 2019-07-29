@@ -32,7 +32,8 @@ bash scripts/config --file .config \
 	--set-str LOCALVERSION $LOCAL_VERSION \
         --module HID_SENSOR_IIO_COMMON \
         --module HID_SENSOR_ACCEL_3D \
-	--module HID_SENSOR_GYRO_3D
+	--module HID_SENSOR_GYRO_3D \
+	--module BATMAN_ADV
 
 yes "" | make olddefconfig
 
