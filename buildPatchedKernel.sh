@@ -1,9 +1,10 @@
+
 #!/bin/bash
 # Patch the kernel for the Intel Realsense library librealsense on a Jetson TX2 Developer Kit
 # MIT License
 
 LIBREALSENSE_DIRECTORY=${HOME}/librealsense
-LIBREALSENSE_VERSION=v2.22.0
+LIBREALSENSE_VERSION=v2.24.0
 
 
 function usage
@@ -54,6 +55,8 @@ L4TTarget="32.1.0"
   # Test for 28.2.1 first
   if [ $JETSON_L4T = "32.1.0" ] ; then
      KERNEL_BUILD_VERSION=vL4T32.1.0
+  elif [ $JETSON_L4T = "32.2.0" ] ; then
+     KERNEL_BUILD_VERSION=vL4T32.2.0
   elif [ $JETSON_L4T = "28.2" ] ; then
      KERNEL_BUILD_VERSION=vL4T28.2r3
   else

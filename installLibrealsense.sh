@@ -2,7 +2,7 @@
 # Builds the Intel Realsense library librealsense2 on a Jetson TX2 Developer Kit
 
 LIBREALSENSE_DIRECTORY=${HOME}/librealsense
-LIBREALSENSE_VERSION=v2.22.0
+LIBREALSENSE_VERSION=v2.24.0
 INSTALL_DIR=$PWD
 
 
@@ -92,7 +92,7 @@ cd build
 echo "${green}Configuring Make system${reset}"
 # Use the CMake version that we built, must be > 3.8
 # Build with CUDA (default), the CUDA flag is USE_CUDA, ie -DUSE_CUDA=true
-cmake ../ -DBUILD_EXAMPLES=true -DBUILD_WITH_CUDA=false
+cmake ../ -DBUILD_EXAMPLES=true -DBUILD_WITH_CUDA=false -DUSE_CUDA=false
 # The library will be installed in /usr/local/lib, header files in /usr/local/include
 # The demos, tutorials and tests will located in /usr/local/bin.
 echo "${green}Building librealsense, headers, tools and demos${reset}"
